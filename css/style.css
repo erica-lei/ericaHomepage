@@ -1,0 +1,131 @@
+
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+
+
+
+body {
+    background: aliceblue;
+  }
+  
+  h1 {
+    font-size: 80px;
+  }
+  
+  h3 {
+    font-size: 30px;
+  }
+  
+  /* Giving our navbar some padding and a background color */
+  .navbar {
+    padding: 10px;
+    background: pink;
+  }
+  
+  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+  .navbar li {
+    display: inline-block;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 3px;
+  }
+  
+  /* Getting rid of the default link styles here */
+  .navbar li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  #nav-select {
+    visibility: hidden;
+  }
+  
+  /* Styling the header, giving it a height, a background color, and some top padding */
+  .header {
+    height: 200px;
+    padding-top: 20px;
+    background: beige;
+  }
+  
+  /* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
+  .header h1 {
+    padding: 60px;
+    margin: 0;
+    color: #000;
+    text-align: center;
+  }
+  
+  /* Giving the .post element margin on 3 sides */
+  .post {
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  
+  /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+  @media (max-width: 480px) {
+    .navbar li {
+      padding: 10px;
+    }
+  
+    .post {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+  
+    .navbar ul {
+      visibility: hidden;
+    }
+  
+    #nav-select {
+      visibility: visible;
+    }
+  }
+
+  
+ /* ****  */
+img{
+    border:1px solid #ddd;
+    border-radius: 4px;
+    padding: 5pm;
+    width:400px;
+}
+
+img:hover{
+    box-shadow: 0 0 2px 1px rgba(0,140,186,0.5)
+}
+#box-2:hover{
+    background: hotpink;
+}
+
+#box-3:hover{
+    background:green;
+}
+
+#box-1{
+    display:inline-block;
+    height:300px;
+    width: 500px;
+    background-color: cadetblue;
+    font-family:sans-serif;
+    
+}
+
+#box-2{
+    display:inline-block;
+    height:300px;
+    width:300px;
+    background-color: pink;
+
+    
+}
+
+#box-3{
+    display:inline-block;
+    height: 300px;
+    width:300px;
+    background-color: lightgreen;
+    
+}
