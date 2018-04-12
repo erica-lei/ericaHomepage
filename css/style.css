@@ -1,20 +1,20 @@
 
 /* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
 
-
-
 body {
     background: aliceblue;
+    font-family: Cambria;
   }
   
   h1 {
     font-size: 80px;
+  
   }
   
   h3 {
     font-size: 30px;
   }
-  
+
   /* Giving our navbar some padding and a background color */
   .navbar {
     padding: 10px;
@@ -22,21 +22,30 @@ body {
   }
   
   /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
-  .navbar li {
+  .navbar ul{
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     margin-right: 10px;
     margin-left: 10px;
     cursor: pointer;
-    background: #fff;
+    background:pink;
     border-radius: 3px;
+  }
+
+  .navbar li{
+    display:inline-block;
+
+  }
+  .btn-outline-info {
+    display:inline-block;
+
   }
   
   /* Getting rid of the default link styles here */
-  .navbar li a {
+  /* .navbar li a {
     color: #000;
     text-decoration: none;
-  }
+  } */
   
   #nav-select {
     visibility: hidden;
@@ -68,6 +77,8 @@ body {
   @media (max-width: 480px) {
     .navbar li {
       padding: 10px;
+
+      /* display: inline-block; */
     }
   
     .post {
@@ -84,48 +95,4 @@ body {
     }
   }
 
-  
- /* ****  */
-img{
-    border:1px solid #ddd;
-    border-radius: 4px;
-    padding: 5pm;
-    width:400px;
-}
 
-img:hover{
-    box-shadow: 0 0 2px 1px rgba(0,140,186,0.5)
-}
-#box-2:hover{
-    background: hotpink;
-}
-
-#box-3:hover{
-    background:green;
-}
-
-#box-1{
-    display:inline-block;
-    height:300px;
-    width: 500px;
-    background-color: cadetblue;
-    font-family:sans-serif;
-    
-}
-
-#box-2{
-    display:inline-block;
-    height:300px;
-    width:300px;
-    background-color: pink;
-
-    
-}
-
-#box-3{
-    display:inline-block;
-    height: 300px;
-    width:300px;
-    background-color: lightgreen;
-    
-}
